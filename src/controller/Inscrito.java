@@ -7,7 +7,7 @@ public class Inscrito implements IConsumidor, _IObservador {
 
 	@Override
 	public void inscrever(String nomeCanal) {
-		System.out.println("(Inscrito em " + nomeCanal + ", ativando notificacoes)");
+		System.out.println("(Novo inscrito em " + nomeCanal + ", ativando notificacoes)");
 	}
 
 	@Override

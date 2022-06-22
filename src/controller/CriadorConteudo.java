@@ -6,10 +6,15 @@ import controller.iface._IObservavel;
 
 public class CriadorConteudo implements IProdutor, _IObservavel {
 
+	private String nome;
 	private List<Inscrito> inscritos;
 
-	public CriadorConteudo(List<Inscrito> inscritos) {
+	public CriadorConteudo(String nome, List<Inscrito> inscritos) {
+		this.nome = nome;
 		this.inscritos = inscritos;
+		for (Inscrito i: this.inscritos) {
+			i.inscrever(nome);
+		}
 	}
 
 	@Override

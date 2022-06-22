@@ -16,7 +16,7 @@ public class Main {
 		inscritos.add(i1);
 		inscritos.add(i2);
 		inscritos.add(i3);
-		CriadorConteudo cc = new CriadorConteudo(inscritos);
+		CriadorConteudo cc = new CriadorConteudo("Canal Legal", inscritos);
 		
 		cc.criarConteudo("Preparando comida caseira, parte 1");
 		cc.criarConteudo("Compilado de memes sem graca");
